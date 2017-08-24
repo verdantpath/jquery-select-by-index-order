@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8" />
 <title>JQuery Select By Index Order</title>
+<style>
+  tr.odd {
+    background-color: #ddd;
+  }
+</style>
 </head>
 <body>
 <div id="content">
@@ -35,7 +40,8 @@
   // $('ul li:odd').addClass('js-selected'); // matches the odd-numbered li's (zero indexed)
   // $('ul li:eq(2)').addClass('selected'); // matches a single item by its index (n), the third in this example (zero indexed)
   // $('ul li:lt(3)').addClass('selected'); // matches all elements with an index below (n), zero indexed
-  $('ul li:gt(2)').addClass('selected'); // matches all elements with an index above (n), zero indexed
+  // $('ul li:gt(2)').addClass('selected'); // matches all elements with an index above (n), zero indexed
+  $('tr:odd').addClass('odd'); // matches the odd table rows
 </script>
 </body>
 </html>
