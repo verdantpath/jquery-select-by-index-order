@@ -41,7 +41,8 @@
   // $('ul li:eq(2)').addClass('selected'); // matches a single item by its index (n), the third in this example (zero indexed)
   // $('ul li:lt(3)').addClass('selected'); // matches all elements with an index below (n), zero indexed
   // $('ul li:gt(2)').addClass('selected'); // matches all elements with an index above (n), zero indexed
-  $('tr:odd').addClass('odd'); // matches the odd table rows
+  // $('tr:odd').addClass('odd'); // matches the odd table rows
+  $('tr').filter(':odd').addClass('odd'); // this works too
 </script>
 </body>
 </html>
